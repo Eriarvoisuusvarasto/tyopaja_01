@@ -455,7 +455,7 @@ function finit(){
 				.attr("dominant-baseline", "central")
 				.attr("class", "textDescription2")
 				.text(function(d, i) {
-					return i === 0 ? "Jopa " + d + " sidosta" : i === 1 || i === 2 ? "Välillä " + (dataCircles[i - 1] + 1) + " - " + d + " sidosta" : dataCircles[i - 1] + " sidosta tai enemmän"
+					return i === 0 ? "Korkeintaan " + d + " sidosta" : i === 1 || i === 2 ? "Välillä " + (dataCircles[i - 1] + 1) + " - " + d + " sidosta" : dataCircles[i - 1] + " sidosta tai enemmän"
 				});
 
 			circlesLegend.on("mouseover", function(d, i) {
